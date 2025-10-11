@@ -20,8 +20,8 @@
     }
 
     .top-image {
-      width: 6%;
-      max-width: 100px;
+      width: 3%;
+      max-width: 80px;
       height: auto;
       border-radius: 12px;
       box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
@@ -49,12 +49,12 @@
       margin: auto;
     }
 
-    /* Shared section heading style */
+    /* Section heading style */
     section h2 {
       text-align: center;
-      font-size: 1.8em;
-      color: #2d3e2e;
-      margin-bottom: 20px;
+      font-size: 2.1em;
+      color: #1e4d2b;
+      margin-bottom: 25px;
     }
 
     img.sample-image {
@@ -105,21 +105,16 @@
       header h1 {
         font-size: 2em;
       }
-
       .venmo-button {
         font-size: 1em;
         padding: 10px 20px;
       }
-
       .top-image {
-        width: 25%;
-        max-width: 120px;
+        width: 20%;
       }
-
       section h2 {
-        font-size: 1.5em;
+        font-size: 1.6em;
       }
-
       .divider img {
         width: 35px;
       }
@@ -154,7 +149,6 @@
       Solar lighting will keep future maintenance costs low while enhancing the space for years to come.
     </p>
 
-    <!-- Watercolor-style image -->
     <img 
       class="sample-image" 
       src="countryside-sign.png" 
@@ -162,16 +156,18 @@
     />
   </section>
 
-  <!-- Leaf divider between sections -->
+  <!-- Leaf divider (embedded SVG, always works) -->
   <div class="divider">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Green_leaf_icon.svg" alt="leaf divider">
+    <img 
+      src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMzc4ZjM1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPTUwIiBoZWlnaHQ9IjUwIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xMiAyQzYuNDggMiAyIDIuNTMgMiAyYy0uNTMgMCAwIDUuOTIgMCA1LjkzIDAgMy41MyAzLjUzIDUuNTcgNiA3LjA3IDIuNDYtMS41IDYtMy41NCA2LTcuMDcgMC0uMDEuNTMtNS45MyAwLTUuOTMtLjUyIDAtNC40OCAwLTkuOTggMCIvPjwvc3ZnPg=="
+      alt="leaf divider"
+    >
   </div>
 
   <section class="donate">
     <h2>How to Donate</h2>
     <p>We're aiming to raise <strong>$15,000 by November 15th</strong>.</p>
-    
-    <!-- Progress bar -->
+
     <div style="margin-top: 30px; text-align: center;">
       <p><strong>$100 raised of $15,000 goal</strong></p>
       <div style="background-color: #e0e0e0; border-radius: 20px; height: 25px; width: 80%; margin: 10px auto;">
