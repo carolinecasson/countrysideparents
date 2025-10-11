@@ -4,29 +4,41 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Countryside Landscape Project</title>
+
+  <!-- ✅ Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f6fdf7;
+      background-color: #f4f8f5;
       color: #2d3e2e;
     }
 
     header {
-      background-color: #8abf9d;
-      padding: 60px 20px;
-      text-align: center;
+      background-color: #81b38d;
       color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header img {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 15px;
     }
 
     header h1 {
-      margin-bottom: 10px;
+      margin: 10px 0 5px;
       font-size: 2.5em;
+      letter-spacing: 1px;
     }
 
     header p {
       font-size: 1.2em;
+      font-weight: 300;
     }
 
     section {
@@ -39,8 +51,38 @@
       width: 100%;
       max-height: 400px;
       object-fit: cover;
-      border-radius: 8px;
+      border-radius: 10px;
       margin: 20px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .progress-section {
+      background-color: #e6f1e6;
+      border-radius: 10px;
+      padding: 25px;
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 25px;
+      background-color: #cfe8d3;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+
+    .progress-fill {
+      width: 60%; /* 🔁 adjust this to your actual progress */
+      height: 100%;
+      background-color: #3d9970;
+      text-align: right;
+      border-radius: 20px;
+      color: white;
+      font-size: 0.9em;
+      line-height: 25px;
+      padding-right: 8px;
     }
 
     .donate {
@@ -48,6 +90,7 @@
       padding: 30px;
       border-radius: 10px;
       text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
 
     .venmo-button {
@@ -58,21 +101,27 @@
       border-radius: 5px;
       text-decoration: none;
       font-size: 1.1em;
+      font-weight: 500;
       margin-top: 15px;
+      transition: background 0.3s ease;
+    }
+
+    .venmo-button:hover {
+      background-color: #2f805c;
     }
 
     footer {
-      background-color: #8abf9d;
+      background-color: #81b38d;
       color: white;
       text-align: center;
       padding: 20px;
+      margin-top: 40px;
     }
 
     @media (max-width: 600px) {
       header h1 {
         font-size: 2em;
       }
-
       .venmo-button {
         font-size: 1em;
         padding: 10px 20px;
@@ -83,6 +132,8 @@
 <body>
 
   <header>
+    <!-- ✅ Replace image URL below with your logo -->
+    <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=600&q=80" alt="Countryside Montessori Logo">
     <h1>Countryside Montessori Landscape Project</h1>
     <p>Help us raise $15,000 by November 15th to beautify the school entrance</p>
   </header>
@@ -104,6 +155,15 @@
       src="https://images.unsplash.com/photo-1565124131091-4b8e58c153b6?auto=format&fit=crop&w=1200&q=80"
       alt="Countryside sample landscaping"
     />
+
+    <!-- ✅ Progress Bar -->
+    <div class="progress-section">
+      <h3>Fundraising Progress</h3>
+      <p>We've raised <strong>$9,000</strong> of our <strong>$15,000</strong> goal!</p>
+      <div class="progress-bar">
+        <div class="progress-fill">60%</div>
+      </div>
+    </div>
   </section>
 
   <section class="donate">
