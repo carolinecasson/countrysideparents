@@ -13,12 +13,18 @@
       color: #2d3e2e;
     }
 
-    /* Top banner image */
-    .top-banner {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-      display: block;
+    /* Smaller top image (centered rectangle) */
+    .top-image-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .top-image {
+      width: 80%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
     header {
@@ -90,20 +96,22 @@
         padding: 10px 20px;
       }
 
-      .top-banner {
-        height: 200px;
+      .top-image {
+        width: 90%;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Top banner image -->
-  <img
-    class="top-banner"
-    src="https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-6/301491541_764565924861976_3979492843425926373_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=07ZyFQ-evTwQ7kNvwHu-PH4&_nc_oc=AdniyF2AzkgDZcTEZtgyoWOcSE3zPCPhXTXqDIxBr4KQQnepRcrmeOISO2MSkOmK0zB5ZMK107VgKGsAUU-5TPkZ&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=Xs7HCdRoZqqe0nTl7-AGAw&oh=00_AfeG3_0CANImZ44U0-5ZNjVMeBNVRdzOexTo2lR3_CbaiA&oe=68EFB9D1"
-    alt="Countryside Montessori School front"
-  />
+  <!-- Small centered image at top -->
+  <div class="top-image-container">
+    <img
+      class="top-image"
+      src="https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-6/301491541_764565924861976_3979492843425926373_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=07ZyFQ-evTwQ7kNvwHu-PH4&_nc_oc=AdniyF2AzkgDZcTEZtgyoWOcSE3zPCPhXTXqDIxBr4KQQnepRcrmeOISO2MSkOmK0zB5ZMK107VgKGsAUU-5TPkZ&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=Xs7HCdRoZqqe0nTl7-AGAw&oh=00_AfeG3_0CANImZ44U0-5ZNjVMeBNVRdzOexTo2lR3_CbaiA&oe=68EFB9D1"
+      alt="Countryside Montessori School front"
+    />
+  </div>
 
   <header>
     <h1>Countryside Montessori Landscape Project</h1>
