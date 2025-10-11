@@ -13,6 +13,20 @@
       color: #2d3e2e;
     }
 
+    /* Tiny top image (centered rectangle) */
+    .top-image-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .top-image {
+      width: 12%;
+      max-width: 150px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    }
+
     header {
       background-color: #8abf9d;
       padding: 60px 20px;
@@ -29,34 +43,17 @@
       font-size: 1.2em;
     }
 
-    .top-image {
-      display: block;
-      width: 25%;
-      max-width: 300px;
-      margin: 30px auto 10px;
-      border-radius: 10px;
-    }
-
     section {
       padding: 40px 20px;
       max-width: 800px;
       margin: auto;
     }
 
-    .divider {
+    /* Shared section heading style */
+    section h2 {
       text-align: center;
-      margin: 30px 0;
-    }
-
-    .divider img {
-      width: 60px;
-      opacity: 0.9;
-    }
-
-    h2.section-title {
-      text-align: center;
-      color: #2d6a4f;
-      font-size: 2em;
+      font-size: 1.8em;
+      color: #2d3e2e;
       margin-bottom: 20px;
     }
 
@@ -68,31 +65,11 @@
       margin: 20px 0;
     }
 
-    .progress-bar-container {
-      background-color: #dceddb;
-      border-radius: 10px;
-      overflow: hidden;
-      width: 100%;
-      height: 20px;
-      margin: 20px 0;
-    }
-
-    .progress-bar {
-      background-color: #3d9970;
-      height: 100%;
-      width: calc((100 / 15000) * 100%);
-      border-radius: 10px 0 0 10px;
-    }
-
     .donate {
       background-color: #dceddb;
       padding: 30px;
       border-radius: 10px;
       text-align: center;
-    }
-
-    .donate h2 {
-      color: #2d3e2e;
     }
 
     .venmo-button {
@@ -122,58 +99,69 @@
         font-size: 1em;
         padding: 10px 20px;
       }
+
+      .top-image {
+        width: 30%;
+        max-width: 120px;
+      }
+
+      section h2 {
+        font-size: 1.5em;
+      }
     }
   </style>
 </head>
 <body>
+
+  <!-- Tiny centered image at top -->
+  <div class="top-image-container">
+    <img
+      class="top-image"
+      src="https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-6/301491541_764565924861976_3979492843425926373_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=07ZyFQ-evTwQ7kNvwHu-PH4&_nc_oc=AdniyF2AzkgDZcTEZtgyoWOcSE3zPCPhXTXqDIxBr4KQQnepRcrmeOISO2MSkOmK0zB5ZMK107VgKGsAUU-5TPkZ&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=Xs7HCdRoZqqe0nTl7-AGAw&oh=00_AfeG3_0CANImZ44U0-5ZNjVMeBNVRdzOexTo2lR3_CbaiA&oe=68EFB9D1"
+      alt="Countryside Montessori School front"
+    />
+  </div>
 
   <header>
     <h1>Countryside Montessori Landscape Project</h1>
     <p>Help us raise $15,000 by November 15th to beautify the school entrance</p>
   </header>
 
-  <!-- Top Image -->
-  <img
-    class="top-image"
-    src="https://scontent-ord5-3.xx.fbcdn.net/v/t39.30808-6/301491541_764565924861976_3979492843425926373_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=07ZyFQ-evTwQ7kNvwHu-PH4&_nc_oc=AdniyF2AzkgDZcTEZtgyoWOcSE3zPCPhXTXqDIxBr4KQQnepRcrmeOISO2MSkOmK0zB5ZMK107VgKGsAUU-5TPkZ&_nc_zt=23&_nc_ht=scontent-ord5-3.xx&_nc_gid=Xs7HCdRoZqqe0nTl7-AGAw&oh=00_AfeG3_0CANImZ44U0-5ZNjVMeBNVRdzOexTo2lR3_CbaiA&oe=68EFB9D1"
-    alt="Countryside Montessori School Sign"
-  />
-
   <section>
-    <h2 class="section-title">About the Project</h2>
+    <h2>About the Project</h2>
     <p>
-      Our goal is to transform the front entrance of Countryside Montessori Preschool.
+      Our goal is to transform the front entrance of Countryside Montessori Preschool. 
       The current space does not reflect the warmth and care that the school provides.
     </p>
     <p>
-      This project includes removing outdated boulders and overgrowth, reseeding,
+      This project includes removing outdated boulders and overgrowth, reseeding, 
       and building a beautiful brick enclosure around the main sign on Northport Drive.
       Solar lighting will keep future maintenance costs low while enhancing the space for years to come.
     </p>
 
-    <div class="divider">
-      <img src="leaf-divider.svg" alt="leaf divider" />
-    </div>
-
-    <img
-      class="sample-image"
-      src="https://countrysideparents.com/landscape-project-image.png"
-      alt="Countryside sample landscaping"
+    <!-- Watercolor-style image -->
+    <img 
+      class="sample-image" 
+      src="countryside-sign.png" 
+      alt="Countryside Montessori Preschool watercolor-style sign"
     />
-
-    <div class="progress-bar-container">
-      <div class="progress-bar"></div>
-    </div>
-    <p style="text-align:center;"><strong>$100 raised of $15,000 goal</strong></p>
   </section>
 
   <section class="donate">
     <h2>How to Donate</h2>
     <p>We're aiming to raise <strong>$15,000 by November 15th</strong>.</p>
+    
+    <!-- Progress bar -->
+    <div style="margin-top: 30px; text-align: center;">
+      <p><strong>$100 raised of $15,000 goal</strong></p>
+      <div style="background-color: #e0e0e0; border-radius: 20px; height: 25px; width: 80%; margin: 10px auto;">
+        <div style="background-color: #3d9970; height: 100%; width: 0.7%; border-radius: 20px;"></div>
+      </div>
+    </div>
 
-    <a
-      class="venmo-button"
-      href="https://venmo.com/Caroline_Casson"
+    <a 
+      class="venmo-button" 
+      href="https://venmo.com/Caroline_Casson" 
       target="_blank"
     >
       Donate via Venmo @Caroline_Casson
